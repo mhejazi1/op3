@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+}
+
+header img {
+  max-width: 60px;
+  width: 100%;
+}
+
+header .HeaderIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+header .HeaderIconWrapper svg {
+  width: 100%;
+  max-width: 35px;
+  color: #fff;
+}
+
+.CarouselWrapper,
+.CarouselWrapper .slick-slider {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CarouselWrapper img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+
+.homeOptionButton {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.homeOptionButton a {
+  display: block;
+  width: 270px;
+  border: 1px solid #fff;
+  border-bottom: 3px solid #fff;
+  margin: 0.4rem 0.4rem;
+
+  padding: 0.7rem;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.homeOptionButton a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.CarouselWrapper .CarouselText {
+  text-align: center;
+  color: #fff;
+  width: 100vw;
+  max-width: 860px;
+}
+
+.CarouselWrapper .sliderItem {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.CarouselWrapper .slick-next {
+  z-index: 99 !important;
+  right: 16px !important;
+}
+
+.CarouselWrapper .slick-prev {
+  left: 8px !important;
+  z-index: 99 !important;
+}
+
+@media (max-width: 500px) {
+  .CarouselWrapper .slick-next,
+  .CarouselWrapper .slick-prev {
+    display: none !important;
+  }
+}
+
+.propertyDetailsSlider {
+  max-height: 550px !important;
+  height: 100%;
+}
+
+.propertyDetailsSlider .slick-slider,
+.propertyDetailsSlider .slick-slide,
+.propertyDetailsSlider .slick-list {
+  height: 100% !important;
+}
+
+.propertyDetailsSlider img {
+  width: 100%;
+  height: 100%;
+}
+
+.propertyDetailsSlider .slick-next {
+  right: 16px !important;
+}
+
+.propertyDetailsSlider .slick-prev {
+  left: 16px !important;
+}
+
+.propertyDetailsSlider .slick-next,
+.propertyDetailsSlider .slick-prev {
+  background: #00000047;
+  padding: 1.2rem;
+  border-radius: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.propertyDetailsSlider .slick-next:hover,
+.propertyDetailsSlider .slick-prev:hover {
+  background: #000 !important;
+}
+
+.propertyDetailsSlider .slick-track {
+  height: 100% !important;
+}
+
+.propertyDetailsSlider .slick-slide > div {
+  height: 100% !important;
+}
